@@ -1,0 +1,13 @@
+-employé [1,n] (signer)[1,1] contrat d'embauche 
+-employé [1,n] (rompre|motif_rupt, date_rupt) [1,n] rupture contrat 
+-employé [0,n] (obtenir|-date_promo) [1,1] Promotion
+-employé [1,1] (occuper| date_occup) [1,n] emploi 
+-emploi [1,1] (appartenir) [1,n] catégorie
+-emploi [1,1] (associer) [1,n] groupe_utilisateur 
+-contrat_embauche [1,1] (avoir période) [1,n] période_contrat
+-employé [0,n] (recevoir|-date_prime,-motif_prim) [1,1] prime 
+-employé [0,n] (participer) [0,n] formation 
+-employé [0,n] (être_soumis) [0,n] stage 
+-employé [0,n] (posséder) [1,1] certificat_travail
+-employé [1,1] (être dans|-date service) [1,n] service 
+-service [1,1] (se situer) [1,n] direction (établissement) 
